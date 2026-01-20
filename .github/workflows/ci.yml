@@ -79,7 +79,7 @@ jobs:
           source install/setup.bash
           # Run unit tests (converters, etc.)
           colcon test --packages-select ros2_yolos_cpp \
-            --ctest-args -R "DetectionConverterTest" \
+            --ctest-args -R "test_detection_converter" \
             --return-code-on-test-failure \
             --event-handlers console_direct+
 
