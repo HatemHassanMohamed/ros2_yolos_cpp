@@ -166,9 +166,20 @@ if(NOT EXISTS "${YOLOS_CPP_DIR}/include/yolos/yolos.hpp")
     message(FATAL_ERROR "Failed to extract YOLOs-CPP")
   endif()
   
-  # Rename extracted folder (usually YOLOs-CPP-master) to standard name
+  # Find the extracted folder (can vary by branch, e.g. YOLOs-CPP-main or YOLOs-CPP-master)
+  file(GLOB EXTRACTED_DIRS "${CMAKE_BINARY_DIR}/YOLOs-CPP-*")
+  if(NOT EXTRACTED_DIRS)
+    message(FATAL_ERROR "Extraction failed: Could not find YOLOs-CPP-* directory in ${CMAKE_BINARY_DIR}")
+  endif()
+  
+  # Use the first match
+  list(GET EXTRACTED_DIRS 0 EXTRACTED_DIR)
+  
+  # Remove build dir if it exists from previous run
   file(REMOVE_RECURSE "${YOLOS_CPP_DIR}")
-  file(RENAME "${CMAKE_BINARY_DIR}/YOLOs-CPP-${YOLOS_CPP_VERSION}" "${YOLOS_CPP_DIR}")
+  
+  # Rename to standard build directory
+  file(RENAME "${EXTRACTED_DIR}" "${YOLOS_CPP_DIR}")
   file(REMOVE "${CMAKE_BINARY_DIR}/yolos_cpp.tar.gz")
 endif()
 
