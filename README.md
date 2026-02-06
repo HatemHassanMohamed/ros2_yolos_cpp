@@ -21,6 +21,15 @@
 
 **ros2_yolos_cpp** brings the blazing speed and unified API of [YOLOs-CPP](https://github.com/Geekgineer/YOLOs-CPP) to the robot operating system. It provides composable, lifecycle-managed nodes for the entire YOLO family (v5, v8, v11, v26, etc.).
 
+## 🎬 Demo
+
+<p align="center">
+  <video src="ezyZip.mp4" controls width="640">
+https://github.com/user-attachments/assets/6cdf0ddd-fc99-47c0-8541-2ee4b63775ae
+  </video>
+</p>
+---
+
 ### Key Features
 - **⚡ Zero-Copy Transport**: Optimized for high-throughput image pipelines using `rclcpp::Subscription`.
 - **🔄 Lifecycle Management**: Full support for `configure`, `activate`, `deactivate`, `shutdown` transitions.
