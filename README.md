@@ -109,8 +109,36 @@ ros2 launch ros2_yolos_cpp classifier.launch.py \
     labels_path:=/path/to/imagenet.names \
     image_topic:=/camera/image_raw
 ```
+---
+
+## 🔄 Nodes Configuration
+
+Replace `<node_name>` with the appropriate name for your task:
+- **Detection**: `/yolos_detector`
+- **Segmentation**: `/yolos_segmentor`
+- **Pose**: `/yolos_pose`
+- **OBB**: `/yolos_obb`
+- **Classification**: `/yolos_classifier`
+
+### Run Nodes
+```bash
+ros2 lifecycle set <node_name> configure
+```
+```bash
+ros2 lifecycle set <node_name> activate
+```
+
+### 3. Close Nodes
+```bash
+ros2 lifecycle set <node_name> deactivate
+```
+```bash
+ros2 lifecycle set <node_name> shutdown
+```
 
 ---
+
+### 5. Image Classification
 
 ## ⚙️ Configuration
 
