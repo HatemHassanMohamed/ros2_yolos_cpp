@@ -25,14 +25,25 @@
 
 ## 🎬 Demo
 
-<p align="center">
-  <b>Pose Estimation</b>&nbsp;&nbsp;&nbsp;
-  <b>Object Detection</b>&nbsp;&nbsp;&nbsp;
-  <b>Image Segmentation</b><br>
-  <img src="assets/3.gif" width="280">
-  <img src="assets/1.gif" width="280">
-  <img src="assets/2.gif" width="280">
-</p>
+<table align="center" cellpadding="10">
+  <tr>
+    <td align="center" style="border:1px solid #ccc">
+      <b>Pose Estimation</b><br>
+      <img src="assets/3.gif" width="500">
+    </td>
+    <td align="center" style="border:1px solid #ccc">
+      <b>Object Detection</b><br>
+      <img src="assets/2.gif" width="500">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" style="border:1px solid #ccc">
+      <b>Image Segmentation</b><br>
+      <img src="assets/3.gif" width="500">
+    </td>
+  </tr>
+</table>
+
 
 ---
 
