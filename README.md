@@ -21,13 +21,16 @@
 
 **ros2_yolos_cpp** brings the blazing speed and unified API of [YOLOs-CPP](https://github.com/Geekgineer/YOLOs-CPP) to the robot operating system. It provides composable, lifecycle-managed nodes for the entire YOLO family (v5, v8, v11, v26, etc.).
 
+---
+
 ## 🎬 Demo
 
 <p align="center">
-  <img src="assets/3.gif" width="240" alt="Pose Estimation">
-  <img src="assets/1.gif" width="240" alt="Object Detection">
-  <img src="assets/2.gif" width="240" alt="Image Segmentation">
+  <img src="assets/3.gif" width="360" alt="Pose Estimation">
+  <img src="assets/1.gif" width="360" alt="Object Detection">
+  <img src="assets/2.gif" width="360" alt="Image Segmentation">
 </p>
+
 ---
 
 ### Key Features
